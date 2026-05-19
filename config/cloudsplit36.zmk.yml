@@ -4,7 +4,7 @@ name: CloudSplit36
 type: shield
 url: ""
 requires:
-  - seeeduino_xiao_ble
+  - xiao_ble
 features:
   - keys
   - bluetooth
