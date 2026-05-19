@@ -1,0 +1,16 @@
+if SHIELD_CLOUDSPLIT36_LEFT || SHIELD_CLOUDSPLIT36_RIGHT
+
+config ZMK_KEYBOARD_NAME
+    default "CloudSplit36"
+
+config ZMK_SPLIT
+    default y
+
+endif
+
+if SHIELD_CLOUDSPLIT36_LEFT
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
