@@ -1,5 +1,5 @@
 include:
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: cloudsplit36_left
-  - board: xiao_ble//zmk
+  - board: seeeduino_xiao_ble
     shield: cloudsplit36_right
