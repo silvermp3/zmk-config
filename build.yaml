@@ -1,0 +1,5 @@
+include:
+  - board: xiao_ble//zmk
+    shield: cloudsplit36_left
+  - board: xiao_ble//zmk
+    shield: cloudsplit36_right
