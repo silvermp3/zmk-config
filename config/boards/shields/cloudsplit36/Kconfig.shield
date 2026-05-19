@@ -1,0 +1,5 @@
+config SHIELD_CLOUDSPLIT36_LEFT
+    def_bool $(shields_list_contains,cloudsplit36_left)
+
+config SHIELD_CLOUDSPLIT36_RIGHT
+    def_bool $(shields_list_contains,cloudsplit36_right)
