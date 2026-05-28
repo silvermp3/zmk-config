@@ -3,5 +3,3 @@ include:
     shield: cloudsplit36_left
   - board: seeeduino_xiao_ble
     shield: cloudsplit36_right
-  - board: seeeduino_xiao_ble
-    shield: tester_xiao
