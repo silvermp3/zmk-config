@@ -12,7 +12,7 @@
                 &kp Q       &kp W       &kp F       &kp P       &none               &none       &kp L       &kp U       &kp Y       &kp V
                 &kp A       &kp R       &kp S       &kp T       &none               &none       &kp N       &kp E       &kp I       &kp O
                 &kp Z       &kp X       &kp C       &kp D       &none               &none       &kp H       &kp G       &kp M       &kp B
-                                        &none       &mo 1       &kp SPACE           &mo 3       &mo 2       &none
+                                        &none       &kp SPACE   &mo 1               &mo 3       &mo 2       &none
             >;
         };
 
@@ -29,8 +29,8 @@
         num_layer {
             display-name = "Num";
             bindings = <
-                &kp 1       &kp 2       &kp 3       &kp 4       &none               &none       &kp 7       &kp 8       &kp 9       &kp 0
-                &kp DOLLAR  &kp PERCENT &kp J       &kp 5       &none               &none       &kp 6       &kp K       &kp APOS    &kp HASH
+                &kp N1      &kp N2      &kp N3      &kp N4      &none               &none       &kp N7      &kp N8      &kp N9      &kp N0
+                &kp DOLLAR  &kp PERCENT &kp J       &kp N5      &none               &none       &kp N6      &kp K       &kp APOS    &kp HASH
                 &none       &none       &kp GRAVE   &kp CARET   &none               &none       &kp BSLH    &kp TILDE   &none       &none
                                         &trans      &trans      &trans              &trans      &trans      &trans
             >;
@@ -40,11 +40,28 @@
         sym_layer {
             display-name = "Sym";
             bindings = <
-                &kp Q       &kp W       &kp F       &kp P       &none               &none       &kp L       &kp U       &kp Y       &kp V
-                &kp A       &kp R       &kp S       &kp T       &none               &none       &kp N       &kp E       &kp I       &kp O
-                &kp Z       &kp X       &kp C       &kp D       &none               &none       &kp H       &kp G       &kp M       &kp B
-                                        &none       &mo 1       &kp SPACE           &none       &none       &none
+                &kp RBKT    &kp GT      &kp RPAR    &kp SLASH   &none               &none       &kp AMPS    &kp RBRC    &kp PIPE    &kp ASTERISK
+                &kp LBKT    &kp LT      &kp LPAR    &kp DOT     &none               &none       &kp SEMI    &kp LBRC    &kp EQUAL   &kp PLUS
+                &kp AT      &kp QMARK   &kp EXCL    &kp COMMA   &none               &none       &kp COLON   &kp DQT     &kp UNDER   &kp MINUS
+                                        &trans      &trans      &trans              &trans      &trans      &trans
             >;
+        };
+
+        func_layer {
+            display-name = "Func";
+            bindings = <
+                &kp F1      &kp F2      &kp F3      &kp F4      &none               &none       &kp F5      &kp F6      &kp F7      &kp F8
+                &none       &none       &kp F9      &kp F10     &none               &none       &kp F11     &kp F12     &none       &none
+                &bootloader &none       &none       &none       &none               &none       &none       &none       &none       &bootloader
+                                        &trans      &trans      &trans              &trans      &trans      &trans
+            >;
+        };
+    };
+        conditional_layers {
+        compatible = "zmk,conditional-layers";
+        tri_layer {
+            if-layers = <1 2>;
+            then-layer = <4>;
         };
     };
 };
