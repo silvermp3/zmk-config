@@ -4,6 +4,15 @@
 
 / {
     behaviors {
+    sk: sticky_key {
+        compatible = "zmk,behavior-sticky-key";
+        #binding-cells = <1>;
+        bindings = <&kp>;
+        release-after-ms = <2000>;
+        quick-release;
+        ignore-modifiers;
+    };
+
     lts: layer_tap_sticky {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
@@ -22,7 +31,7 @@
                 &kp Q       &kp W       &kp F       &kp P       &none               &none       &kp L       &kp U       &kp Y       &kp V
                 &kp A       &kp R       &kp S       &kp T       &none               &none       &kp N       &kp E       &kp I       &kp O
                 &kp Z       &kp X       &kp C       &kp D       &none               &none       &kp H       &kp G       &kp M       &kp B
-                                        &to 1       &lts 4 LCTRL &lts 2 LSHIFT      &kp SPACE   &mo 3       &to 6
+                                        &to 1       &lts 3 LCTRL &lts 2 LSHIFT      &kp SPACE   &mo 4       &to 6
             >;
         };
 
@@ -110,7 +119,7 @@
         conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
-            if-layers = <2 3>;
+            if-layers = <2 4>;
             then-layer = <5>;
         };
     };
