@@ -1,5 +1,5 @@
 #define ZMK_POINTING_DEFAULT_MOVE_VAL 900
-#define ZMK_POINTING_DEFAULT_SCRL_VAL 150
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 200
 #include <behaviors.dtsi>
 #include <behaviors/rgbled_widget.dtsi>
 #include <dt-bindings/zmk/pointing.h>
