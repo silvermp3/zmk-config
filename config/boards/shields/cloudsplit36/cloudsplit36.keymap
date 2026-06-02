@@ -42,9 +42,9 @@
         qwerty_layer {
             display-name = "qwerty";
             bindings = <
-                &kp Q       &kp N2      &kp W       &kp N3      &none               &none       &kp Z       &kp S       &kp X       &kp D
-                &kp E       &kp R       &kp N5      &kp T       &none               &none       &kp C       &kp V       &kp G       &kp B
-                &kp N6      &kp Y       &kp N7      &kp U       &none               &none       &kp H       &kp N       &kp J       &kp M
+                &kp Z       &kp S       &kp X       &kp D       &none               &none       &kp Q       &kp N2      &kp W       &kp N3
+                &kp C       &kp V       &kp G       &kp B       &none               &none       &kp E       &kp R       &kp N5      &kp T
+                &kp H       &kp N       &kp J       &kp M       &none               &none       &kp N6      &kp Y       &kp N7      &kp U
                                         &to 0       &kp LCTRL   &kp LSHIFT          &kp SPACE   &kp LALT    &trans
             >;
         };
