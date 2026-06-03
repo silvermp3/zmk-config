@@ -42,9 +42,9 @@
         qwerty_layer {
             display-name = "qwerty";
             bindings = <
-                &kp Z       &kp S       &kp X       &kp D       &none               &none       &kp Q       &kp N2      &kp W       &kp N3
-                &kp C       &kp V       &kp G       &kp B       &none               &none       &kp E       &kp R       &kp N5      &kp T
-                &kp H       &kp N       &kp J       &kp M       &none               &none       &kp N6      &kp Y       &kp N7      &kp U
+                &kp Q       &kp W       &kp E       &kp R       &kp T               &kp Y       &kp U       &kp I       &kp O       &kp P
+                &kp A       &kp S       &kp D       &kp F       &kp G               &kp H       &kp J       &kp K       &kp L       &kp SEMI
+                &kp Z       &kp X       &kp C       &kp V       &kp B               &kp N       &kp M       &kp COMMA   &kp DOT     &kp SLASH
                                         &to 0       &kp LCTRL   &kp LSHIFT          &kp SPACE   &kp LALT    &trans
             >;
         };
@@ -85,7 +85,7 @@
             bindings = <
                 &kp F1      &kp F2      &kp F3      &kp F4      &none               &none       &kp F5      &kp F6      &kp F7      &kp F8
                 &none       &none       &kp F9      &kp F10     &none               &none       &kp F11     &kp F12     &none       &ind_bat
-                &bootloader &none       &none       &none       &none               &none       &none       &none       &none       &bootloader
+                &bootloader &bt BT_CLR  &none       &none       &none               &none       &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bootloader
                                         &trans      &trans      &trans              &trans      &trans      &trans
             >;
         };
