@@ -21,7 +21,7 @@
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
         bindings = <&mo>, <&sk>;
-        tapping-term-ms = <5000>;
+        tapping-term-ms = <2000>;
         flavor = "tap-unless-interrupted";
     };
 };
