@@ -52,7 +52,7 @@
         nav_layer {
             display-name = "Nav";
             bindings = <
-                &none       &kp LALT    &kp LSHIFT  &kp LCTRL   &none               &none       &kp RCTRL   &kp RSHIFT  &kp RALT    &kp TAB
+                &kp LWIN    &kp LALT    &kp LSHIFT  &kp LCTRL   &none               &none       &kp RCTRL   &kp RSHIFT  &kp RALT    &kp TAB
                 &kp DOWN    &kp LEFT    &kp UP      &kp RIGHT   &none               &none       &kp ENTER   &kp BSPC    &kp DEL     &kp LWIN
                 &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp ESC    &none               &none       &kp C_PREV  &kp C_PP    &kp C_NEXT  &kp CAPS
                                         &trans      &trans      &trans              &trans      &trans      &trans
