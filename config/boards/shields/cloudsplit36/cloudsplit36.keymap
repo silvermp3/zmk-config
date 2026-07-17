@@ -41,7 +41,7 @@
                 &kp Q       &kp W       &kp F       &kp P       &none               &none       &kp L       &kp U       &kp Y       &kp V
                 &kp A       &kp R       &kp S       &kp T       &none               &none       &kp N       &kp E       &kp I       &kp O
                 &kp Z       &kp X       &kp C       &kp D       &none               &none       &kp H       &kp G       &kp M       &kp B
-                                        &to 1       &lts 3 LCTRL &lts 2 LSHIFT      &lt 4 SPACE &mo 4       &to 7
+                                        &to 1       &lts 3 LCTRL &lts 2 LSHIFT      &kp SPACE   &mo 4       &to 7
             >;
         };
 
