@@ -16,11 +16,13 @@
         quick-release;
         ignore-modifiers;
     };
-    &lt {
-        tapping-term-ms = <200>;
-        flavor = "tap-unless-interrupted";
-    };
-
+    lt: layer_tap {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "tap-unless-interrupted";
+            tapping-term-ms = <2000>;
+            bindings = <&mo>, <&kp>;
+        };
     lts: layer_tap_sticky {
         compatible = "zmk,behavior-hold-tap";
         #binding-cells = <2>;
